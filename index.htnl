@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>my profile</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body onload="loader()">
+    <div id="Loading"></div>
+     <!-----start Hearder section-----> 
+     <div id="hearder"  data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom"> 
+        <div class="contenier">
+            <nav >
+               <!----<img src="" alt="logo" class="logo" data-aos="zoom-in">-->
+                <ul id="sidmenu" data-aos="zoom-in">
+                    <li><a href="#hearder" >Home</a></li>
+                    <li><a href="#about" >About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio" >Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                 </ul>
+                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+              </nav> 
+              <div class="hearder-text"  data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine">
+                <p>Front-end developer/Full stack developer</p>
+                <h1>Hi I am <span>Neha paritala</span> <br> From India</h1>
+              </div>       
+            </div>
+        </div>
+     </div>
+      <!-----End Hearder section----->
+
+
+      <!-----start About section----->
+      <div id="about"data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom">
+        <div class="contenier">
+            <div class="row">
+                <div class="about-col-1">
+                  <img src="https://png.pngtree.com/thumb_back/fh260/background/20220502/pngtree-sticky-note-about-me-concept-question-purpose-me-photo-image_17615398.jpg" data-aos="zoom-in" >  
+                </div>
+                <div class="about-col-2" data-aos="zoom-in">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a final year student pursuing a B-tech in Computer science (CSE) and have a strong interest in discovering new data(things). 
+                        Being able to take on obstacles and can work under pressure. In order to progress and use my learning, abilities, and experience, I'm looking for a challenging position in a reputed Organization . I even have a keen eye for quality and good communication abilities.
+                        I can guarantee you that I give the company my all in terms of hard work and leadership abilities. that will surely benefit the business much, in my opinion.</p>
+                   <div class="tab-titles" data-aos="fade-left">
+                    <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                   </div>
+                   <div class="tab-contents active-tab" id="skills" data-aos="zoom-in">
+                    <ul>
+                        <li><span>C++</span><br>Competitive programming with OOP's conncepts</li>
+                        <li><span>Java Full Stack</span><br> Web App development using Front-end(HTML/CSS/Bootstrap)</li>
+                        <li><span>frameworks </span><br> Springboot,python(django/flask)</li>
+                        <li><span>Database</span><br>SQL(structured query language)</li>
+                        <li><span>poster </span><br>oral&written communication skills / preesentation skills </li>
+                        <li><span>Editors</span><br>Visual Studio Code (VScode), github</li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="experience" >
+                    <ul>
+                        <li><span>2022 - june</span><br>Blitzjobs, Hyderabad.
+                            Role Position (HR Generalist Intern)
+                            <br>Job role:<br>
+                            ●	Hiring of the candidates for Internships.<br>
+                            ●	On-boarding of the new recruits.<br>
+                            ●	Induction for the new recruits.<br>
+                            ●	Client Acquisitions.<br>
+                            ●	Exit Formalities
+                            </li>
+                        <li><span>2024(Jan) - Present</span><br>KR Techno PVT Limited. Job Position:Java full stack Developer (intern)<br>Job Role:<br>● programming back-end code and software systems and designing the front-end areas of software or 
+                            websites in the Java coding language
+                            </li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Computer science and Engineering - B-TECH</span><br><span>(2020-2024)</span><br>
+                            Megha Institute of Engineering and Technology for women, Edulabad.
+                            Currently pursuing.
+                            </li>
+                        <li><span> INTERMRDIATE</span><br><span>(2018-2020)</span>Gitam Junior College (MPC)</li>
+                        <li><span>SECONDARY BOARD OF EDUCATION</span><br><span>(2017-2018)</span>Vijaya High School </li>
+                    </ul>
+                   </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-----End About section----->
+
+
+
+
+      <!-----Service section Start----->
+     <div id="services" data-aos="fade-up"
+     data-aos-anchor-placement="top-center">
+        <div class="contenier" >
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div data-aos="fade-right">
+                    <!--<img src="">-->
+                    <h2>Web Development</h2>
+                    <p>Creating websites from ideas.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div data-aos="flip-up">
+                    <!--<img src="">-->
+                    <h2>Front-end Designer</h2>
+                    <p>Make people smile by design Website.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div data-aos="fade-left">
+                    <!--<img src="">-->
+                    <h2>back-end Developer</h2>
+                    <p>Conquer back-end processes</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+
+        </div>
+     </div>
+      <!----services section end ----->
+
+
+        <!----portfolio section Start ----->
+
+        <div id="portfolio">
+            <div class="contenier">
+                <h1 class="sub-title">My Repositories</h1>
+                <p>""</p>
+                <div class="work-list" >
+                    <div class="work" data-aos="zoom-in">
+                        <img src="https://github.com/developergtm24/animated-website/blob/ea661301187a0b7cff29c472aa1b2dfa1d1f31db/Portfolio3.png?raw=true" >
+                        <div class="layer">
+                            <h3>Basic Banking Website</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem magnam laborum esse quis?</p>
+                            <a target="_blank"  href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+
+                    </div>
+                    <div class="work" data-aos="zoom-in">
+                        <img src="https://github.com/developergtm24/animated-website/blob/ea661301187a0b7cff29c472aa1b2dfa1d1f31db/Portfolio2.png?raw=true" >
+                        <div class="layer">
+                            <h3>Alzheimer's disease prediction </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatibus consectetur porro deserunt?</p>
+                            <a target="_blank"  href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+
+                    </div>
+                    <div class="work" data-aos="zoom-in">
+                        <img src="https://github.com/developergtm24/animated-website/blob/ea661301187a0b7cff29c472aa1b2dfa1d1f31db/Portfolio4.png?raw=true" >
+                        <div class="layer">
+                            <h3>Chatting Application</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab a eaque cupiditate distinctio.</p>
+                            <a target="_blank"  href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <a href="" class="btn">Learn More</a>
+
+            </div>
+        </div>
+         <!----portfolio section End ----->
+
+
+          <!----Contact section Start ----->
+          <div id="contact"  >
+            <div class="contenier">
+                <div class="row">
+                    <div class="contact-left"  data-aos="fade-up-right">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>nehaparitala2@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone-flip"></i>8885112158</p>
+                        <div class="social-icons" data-aos="zoom-in">
+
+                            <a target="_blank" class="instagram" href="https://www.instagram.com/n.neeha_2/?hl=en"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a target="_blank" class="github" href="https://github.com/Neeha2002"><i class="fa-brands fa-github"></i></a>
+                            <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/neha-p-2ba286203/"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1CkoN7WCH9QlO5jpRamLeP8tT0sGdrnay/view?usp=sharing" class="btn btn2">View Resume</a>
+
+                    </div>
+                    <!--<div class="contact-right" data-aos="fade-up-left">
+                        <form >
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="Email" name="Email" placeholder="Your Email" required>
+                            <textarea name="massage" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; 2024 Website Developed By <span style="color: rgb(224, 44, 44);">Neh@p@rit@l@</span></p>
+            </div>
+          </div>
+
+          <!----Contact section End ----->
+          <script>
+            var preloader = document.getElementById("Loading");
+            function loader(){
+              preloader.style.display = 'none';
+            }
+          </script>
+
+      <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+      </script>
+
+    <!-- aos data  -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          duration: 900,
+        });
+      </script>
+    <script>
+        var sidmenu = document.getElementById("sidmenu");
+        function openmenu(){
+            sidmenu.style.right ="0";
+        }
+        function closemenu(){
+            sidmenu.style.right ="-200px";
+        }
+    </script>
+</body>
+</html>
